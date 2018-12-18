@@ -5,7 +5,7 @@
     android:windowSoftInputMode="adjustResize"
     android:screenOrientation="portrait"
     android:exported="true"
-    android:versionCode="19"
+    android:versionCode="1"
     android:versionName="1.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
