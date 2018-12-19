@@ -56,3 +56,10 @@ fastlane
 
 # Bundle artifact
 *.jsbundle
+
+# Snapshots
+__snapshots__
+
+# Env
+.env 
+.env.storybook

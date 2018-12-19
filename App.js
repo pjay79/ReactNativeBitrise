@@ -8,10 +8,18 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Config from 'react-native-config';
+import Storybook from './storybook';
+
+// export default from './storybook';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    if (Config.IS_STORYBOOK === 'true') {
+      return <Storybook />;
+    }
+
     return (
       <View style={styles.container}>
         <Image
