@@ -21,8 +21,9 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>React Native</Text>
         <Text style={styles.welcome}>Bitrise Sample Project</Text>
         <Text style={styles.instructions}>
-          Customise by editing the bitrise.yml
+          Customise by editing the bitrise.yml.
         </Text>
+        <Text style={styles.instructions}>Storybook</Text>
       </View>
     );
   }
@@ -48,6 +49,6 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     color: '#FFFFFF',
-    margin: 10,
+    marginTop: 10,
   },
 });
