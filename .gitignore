@@ -28,6 +28,7 @@ build/
 .idea
 .gradle
 local.properties
+gradle.properties
 *.iml
 
 # node.js
@@ -51,6 +52,14 @@ buck-out/
 */fastlane/report.xml
 */fastlane/Preview.html
 */fastlane/screenshots
+fastlane
 
 # Bundle artifact
 *.jsbundle
+
+# Snapshots
+__snapshots__
+
+# Env
+.env 
+.env.storybook

@@ -6,24 +6,32 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import Config from 'react-native-config';
+import StorybookUI from './storybook';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+// export default from './storybook';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    if (Config.IS_STORYBOOK === 'true') {
+      return <StorybookUI />;
+    }
+
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Image
+          source={require('./assets/images/bitrise.png')}
+          style={styles.image}
+        />
+        <Text style={styles.welcome}>React Native</Text>
+        <Text style={styles.welcome}>Bitrise Sample Project</Text>
+        <Text style={styles.instructions}>
+          Customise by editing the bitrise.yml.
+        </Text>
+        <Text style={styles.instructions}>Storybook</Text>
       </View>
     );
   }
@@ -34,16 +42,21 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#683D87',
+  },
+  image: {
+    height: 150,
+    width: 150,
   },
   welcome: {
     fontSize: 20,
+    fontWeight: 'bold',
     textAlign: 'center',
-    margin: 10,
+    color: '#FFFFFF',
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    color: '#FFFFFF',
+    marginTop: 10,
   },
 });
