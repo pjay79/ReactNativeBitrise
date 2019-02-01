@@ -31,7 +31,9 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           Customise by editing the bitrise.yml.
         </Text>
-        <Text style={styles.instructions}>Storybook</Text>
+        <Text style={styles.instructions}>
+          Storybook: yarn run storybook:ui
+        </Text>
       </View>
     );
   }
