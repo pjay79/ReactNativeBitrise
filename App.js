@@ -8,10 +8,18 @@
 
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import Config from 'react-native-config';
+import StorybookUI from './storybook';
+
+// export default from './storybook';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    if (Config.IS_STORYBOOK === 'true') {
+      return <StorybookUI />;
+    }
+
     return (
       <View style={styles.container}>
         <Image
@@ -21,8 +29,9 @@ export default class App extends Component<Props> {
         <Text style={styles.welcome}>React Native</Text>
         <Text style={styles.welcome}>Bitrise Sample Project</Text>
         <Text style={styles.instructions}>
-          Customise by editing the bitrise.yml
+          Customise by editing the bitrise.yml.
         </Text>
+        <Text style={styles.instructions}>Storybook</Text>
       </View>
     );
   }
@@ -48,6 +57,6 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     color: '#FFFFFF',
-    margin: 10,
+    marginTop: 10,
   },
 });
