@@ -7,7 +7,8 @@
     "test": "jest",
     "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/ReactNativeBitrise/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
     "storybook": "storybook start",
-    "storybook:ui": "ENVFILE=.env.storybook react-native run-ios "
+    "storybook:ios": "ENVFILE=.env.storybook react-native run-ios",
+    "storybook:android": "ENVFILE=.env.storybook react-native run-ios"
   },
   "dependencies": {
     "react": "16.6.3",
