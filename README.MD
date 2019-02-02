@@ -2,6 +2,24 @@
 
 React Native Bitrise CI/CD sample with Storybook
 
+## Bitrise Workflows
+
+### Primary
+
+![primary](https://user-images.githubusercontent.com/14052885/52157452-33ccc400-26e3-11e9-9622-d37238871e2f.png)
+
+### iOS
+
+![ios](https://user-images.githubusercontent.com/14052885/52157451-33ccc400-26e3-11e9-8562-9ed7f3c6c547.png)
+
+### Android
+
+![android](https://user-images.githubusercontent.com/14052885/52157450-33ccc400-26e3-11e9-8246-5dc3b1993ed0.png)
+
+### Secondary
+
+![secondary](https://user-images.githubusercontent.com/14052885/52157453-34655a80-26e3-11e9-801e-45ae890306ca.png)
+
 # Screenshots
 
 ## iOS
