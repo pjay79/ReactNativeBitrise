@@ -1,20 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Config from 'react-native-config';
 import StorybookUI from './storybook';
 
-// export default from './storybook';
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     if (Config.IS_STORYBOOK === 'true') {
       return <StorybookUI />;
